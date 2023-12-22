@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>AmbiBlend: {% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="../static/styles.css">
+    </head>
+
+    <body style="background-color: var({% block colour %}{% endblock %});">
+        <nav class="nav">
+        <div class="logo">
+            <a href="{% url "index" %}">
+            <div><img src="../static/assets/png/logo.png" alt=""></div>
+            <div><a href="{% url "index" %}" class="nav-header h2">Ambiblend</a></div>
+            </a>
+        </div>
+        <a class="nav-header h2" href="/about/" >About</a>
+    </nav>
+            {% block main %}{% endblock %}
+    </body>
+    <script src="../static/js/script.js"></script>
+
+</html>

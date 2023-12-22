@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% load static %}
+{% block colour %}--cream{% endblock %}
+{% block main %}
+<main>
+    <div class="wrapper">
+        <div class="column1">
+            <h1 class="h1">Your portal to<br>peaceful soundscapes</h1>
+            <p class="h3 paragragh-style">Transform your environment with the power of sound.
+                Discover the perfect blend of music and nature for ultimate relaxation
+                and focus. Unlock your potential, one melody at a time!
+            </p>
+            <div class="ambi-selector">
+                <h2 class="h2">
+                    <img class="bullet" src="../static/assets/png/logo.png" alt="">
+                    Background music
+                </h2>
+                <button><a class="button-text" href="/forest/">Forest</a></button>
+                <button><a class="button-text" href="/ocean/">Ocean</a></button>
+                <button><a class="button-text" href="/cafe/">Cafe</a></button>
+            </div>
+        </div>
+        <div class="column2">
+            <div class="vinyl-player">
+                <img src="../static/assets/png/index_player.png" alt="" class="player pin">
+                <img src="../static/assets/svg/home_vinyl.svg" alt="" class="vinyl">
+
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

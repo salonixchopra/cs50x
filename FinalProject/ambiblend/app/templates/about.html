@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}About{% endblock %}
+{% load static %}
+{% block colour %}--cream{% endblock %}
+{% block main %}
+<main>
+    <div class="wrapper">
+        <div class="column1">
+            <h1 class="h1">Unlock your potential, one melody at a time!</h1>
+            <p class="h3 paragragh-style">Music has always been a productivity booster, says a study 
+                that I made up for the purpose of writing this sentence. That said, 
+                I find it almost ritualistic to set the mood with instrumentals before 
+                diving into work. Even the tradition of playing ocean sounds before 
+                bedtime has taken hold. Hence, 'Ambi Blend' is here to craft a personalised 
+                soundscape tailored to your preferences.
+                <br><br>
+                Inspired by imisscafe.com and imissbar.com. Code and design by Saloni 
+                Chopra. This is my final project for CS50x, course by Harvard Edx, 
+                instructed by David Malan. I soon intend to have my code as an open 
+                source on my portfolio site.
+            </p>
+        </div>
+        <div class="column2">
+            <div>
+                <img src="../static/assets/png/about.png" alt="" class="about-img">
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block title %}Cafe{% endblock %}
+{% load static %}
+{% block colour %}--cafe-page-theme{% endblock %}
+{% block main %}
+<main>
+    <div class="wrapper">
+        <div class="column1">
+            <h1 class="h1">Your portal to<br>peaceful soundscapes</h1>
+            <div class="music-mode">
+                <div>
+                <div class="ambi-mode">
+                    <button class="ambi-mode-button"><a class="button-text" href="/forest/">Forest</a></button>
+                    <button class="ambi-mode-button"><a class="button-text" href="/ocean/">Ocean</a></button>
+                    <button class="ambi-mode-button selected"><a class="button-text" href="/cafe/">Cafe</a></button>
+                </div>
+                <h2 class="h2">
+                    <img class="bullet" src="../static/assets/png/logo.png" alt="">
+                    Ambience mode</h2>
+                    {% if cafe_track %}
+                    <audio src="{{cafe_track.ambient_track.url}}" id="ambient"></audio>
+                    {% endif %}
+                <div class="mp3-player">
+                    <img class="play" onclick="playPause(this,'ambient')" src="../static/assets/png/play.png" alt="">
+                    <img src="../static/assets/png/low_vol.png" alt="">
+                    <input type="range" onchange="audioVol(this, 'ambient')">
+                    <img src="../static/assets/png/high_vol.png" alt="">
+                </div>
+                <br><br>
+
+                <h2 class="h2">
+                    <img class="bullet" src="../static/assets/png/logo.png" alt="">
+                    Background music
+                </h2>
+                <audio src="" id="background"></audio>
+                <div class="category">
+                    <p class="button-text"> Focused </p>
+                    <input type="range" max="4" onchange="focusMode(this,'background')" step="1">
+                    <p class="button-text"> Relaxed </p>
+                </div>
+                <div class="mp3-player">
+                    <img class="play" id="backgroundPlay" onclick="playPause(this,'background')" src="../static/assets/png/play.png" alt="">
+                    <img src="../static/assets/png/low_vol.png" alt="">
+                    <input type="range" onchange="audioVol(this, 'background')">
+                    <img src="../static/assets/png/high_vol.png" alt="">
+                </div>
+             </div>
+            <div>
+                <button class="seccondary-button" onclick="changeTrack('background')"><a class="button-text">Change track</a></button>
+            </div>
+            
+            </div>
+        </div>
+        <div class="column2">
+            <div class="vinyl-player">
+                <img src="../static/assets/png/cafe_player.png" alt="" class="player">
+                <img src="../static/assets/svg/cafe_vinyl.svg" alt="" class="vinyl animate">
+
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
