@@ -1,5 +1,5 @@
 # Ambiblend: Your sound sanctuary
-#### Video Demo:  <https://www.youtube.com/watch?v=Z287TQuP8Ms&t=49s>
+#### Video Demo:  [Click for product walkthrough] (https://www.youtube.com/watch?v=Z287TQuP8Ms&t=49s)
 #### Description:
 ---
 ###### Hello, I am Saloni Chopra. I am a practicing Product Designer from India. I really enjoy curating both digital & physical experiences for people, though I have largely worked in digital spaces. I am hoping to diversify my skills specially wthe ones that will help me explore design in extended reality (XR) spaces. Thank you to the entire team at Harcard and Edx, for this was a well designed, beginner friendly program that has helped be go from zero programming experience to designing nad coding my very own web product. Specia thanks to cs50.ai, it has been a great embodiment of the 
